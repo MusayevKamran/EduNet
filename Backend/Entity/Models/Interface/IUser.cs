@@ -12,11 +12,11 @@ namespace EntityData.Models.Interface
         AppUser GetUsersById(Guid? Id);
         Task<AppUser> GetUsersByIdAsync(Guid? Id);
 
-        AppUser CreateUsers(AppUser BrainStormUser);
-        Task<AppUser> CreateUsersAsync(AppUser BrainStormUser);
+        AppUser CreateUsers(AppUser AppUser);
+        Task<AppUser> CreateUsersAsync(AppUser AppUser);
 
-        AppUser UpdateUsers(Guid? Id, AppUser BrainStormUser);
-        Task<AppUser> UpdateUsersAsync(Guid? Id, AppUser BrainStormUser);
+        AppUser UpdateUsers(Guid? Id, AppUser AppUser);
+        Task<AppUser> UpdateUsersAsync(Guid? Id, AppUser AppUser);
 
         void DeleteUsers(Guid? Id);
         Task<AppUser> DeleteUsersAsync(Guid? Id);

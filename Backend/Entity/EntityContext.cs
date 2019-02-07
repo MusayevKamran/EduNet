@@ -10,9 +10,9 @@ namespace EntityData
         public virtual DbSet<ArticleCategory> ArticleCategories { get; set; }
         public virtual DbSet<ArticleImages> ArticleImages { get; set; }
         public virtual DbSet<Article> Articles { get; set; }
-        public virtual DbSet<Category> Category { get; set; }
-        public virtual DbSet<Comment> Comment { get; set; }
-        public virtual DbSet<AppUser> BrainStormUser { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<AppUser> AppUsers { get; set; }
 
 
         public EntityContext(DbContextOptions<EntityContext> options) : base(options) { }
