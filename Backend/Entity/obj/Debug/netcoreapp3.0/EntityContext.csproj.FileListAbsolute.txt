@@ -1,0 +1,8 @@
+D:\Project\EduNet\Backend\Admin\Entity\bin\Debug\netcoreapp3.0\EntityContext.deps.json
+D:\Project\EduNet\Backend\Admin\Entity\bin\Debug\netcoreapp3.0\EntityContext.dll
+D:\Project\EduNet\Backend\Admin\Entity\obj\Debug\netcoreapp3.0\EntityContext.csprojAssemblyReference.cache
+D:\Project\EduNet\Backend\Admin\Entity\obj\Debug\netcoreapp3.0\EntityContext.csproj.CoreCompileInputs.cache
+D:\Project\EduNet\Backend\Admin\Entity\obj\Debug\netcoreapp3.0\EntityContext.AssemblyInfoInputs.cache
+D:\Project\EduNet\Backend\Admin\Entity\obj\Debug\netcoreapp3.0\EntityContext.AssemblyInfo.cs
+D:\Project\EduNet\Backend\Admin\Entity\bin\Debug\netcoreapp3.0\EntityContext.runtimeconfig.json
+D:\Project\EduNet\Backend\Admin\Entity\bin\Debug\netcoreapp3.0\EntityContext.runtimeconfig.dev.json
