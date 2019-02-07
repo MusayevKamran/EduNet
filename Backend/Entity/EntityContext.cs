@@ -1,19 +1,21 @@
 ﻿using EntityData.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace EntityData
 {
-    public class EntityContext : DbContext
+    public class EntityContext : IdentityDbContext<AppUser, AppRole, Guid>
     {
-        public EntityContext(DbContextOptions options) : base(options) {}
-
         public virtual DbSet<ArticleCategory> ArticleCategories { get; set; }
         public virtual DbSet<ArticleImages> ArticleImages { get; set; }
         public virtual DbSet<Article> Articles { get; set; }
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Comment> Comment { get; set; }
+        public virtual DbSet<AppUser> BrainStormUser { get; set; }
 
+
+        public EntityContext(DbContextOptions<EntityContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -59,5 +61,4 @@ namespace EntityData
             base.OnModelCreating(builder);
         }
     }
-
 }

@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 
 namespace EntityData.Models
 {
-    public class AppUser
+    public class AppUser : IdentityUser<Guid>
     {
-        public int Id { get; set; }
+        public AppUser() : base() { }
 
         public string FirstName { get; set; }
 
@@ -29,7 +31,6 @@ namespace EntityData.Models
         public int View { get; set; }
 
         public virtual ICollection<Article> Article { get; set; }
-
         public virtual ICollection<Comment> Comment { get; set; }
     }
 }

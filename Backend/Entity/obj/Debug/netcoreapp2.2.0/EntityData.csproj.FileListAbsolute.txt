@@ -18,4 +18,3 @@ D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\EntityData.runtimecon
 D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\EntityData.runtimeconfig.dev.json
 D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\EntityData.dll
 D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\EntityData.pdb
-D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\EntityData.csprojAssemblyReference.cache
