@@ -18,3 +18,4 @@ D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\EntityData.AssemblyIn
 D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\EntityData.AssemblyInfo.cs
 D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\EntityData.dll
 D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\EntityData.pdb
+D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\EntityData.csprojAssemblyReference.cache

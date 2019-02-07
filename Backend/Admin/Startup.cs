@@ -34,19 +34,20 @@ namespace Admin
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentityCore<AppUser>(
-                    options =>
-                    {
-                        options.Password.RequiredLength = 5;
-                        options.Password.RequireLowercase = false;
-                        options.Password.RequireUppercase = false;
-                        options.Password.RequireNonAlphanumeric = false;
-                        options.Password.RequireDigit = false;
-                        options.Stores.MaxLengthForKeys = 128;
-                    })
-                    .AddEntityFrameworkStores<EntityContext>()
-                    .AddDefaultUI()
-                    .AddDefaultTokenProviders();
+
+            //services.AddIdentity<AppUser, AppRole>(
+            //        options =>
+            //        {
+            //            options.Password.RequiredLength = 5;
+            //            options.Password.RequireLowercase = false;
+            //            options.Password.RequireUppercase = false;
+            //            options.Password.RequireNonAlphanumeric = false;
+            //            options.Password.RequireDigit = false;
+            //            options.Stores.MaxLengthForKeys = 128;
+            //        })
+            //        .AddEntityFrameworkStores<EntityContext>()
+            //        .AddDefaultUI()
+            //        .AddDefaultTokenProviders();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
