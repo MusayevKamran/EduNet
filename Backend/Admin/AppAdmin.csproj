@@ -27,4 +27,9 @@
     <ProjectReference Include="..\Entity\AppEntity.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
 </Project>

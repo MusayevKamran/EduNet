@@ -2,23 +2,28 @@
     <nav class="sidebar-nav">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="index">
-                    <i class="nav-icon icon-speedometer"></i> Dashboard
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> EduNet
                     <span class="badge badge-primary">NEW</span>
                 </a>
             </li>
-
-            <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#">
-                    <i class="nav-icon icon-puzzle"></i> Base
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Admin
+                    <span class="badge badge-primary">NEW</span>
                 </a>
-                <ul class="nav-dropdown-items">
-                    <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="base-breadcrumb">
-                            <i class="nav-icon icon-puzzle"></i> Breadcrumb
-                        </a>
-                    </li>
-                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Tutorial" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Tutorial
+                    <span class="badge badge-primary">NEW</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Blog" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Blog
+                    <span class="badge badge-primary">NEW</span>
+                </a>
             </li>
         </ul>
     </nav>

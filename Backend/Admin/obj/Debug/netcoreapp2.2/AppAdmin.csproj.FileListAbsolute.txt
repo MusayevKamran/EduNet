@@ -39,3 +39,8 @@ D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_head
 D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_footer.cshtml.g.cs
 D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_sidebar.cshtml.g.cs
 D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_asideMenu.cshtml.g.cs
+D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Tutorial\Index.cshtml.g.cs
+D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Tutorial\Details.cshtml.g.cs
+D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Tutorial\Create.cshtml.g.cs
+D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Tutorial\Delete.cshtml.g.cs
+D:\Project\EduNet\Backend\Admin\obj\Debug\netcoreapp2.2\Razor\Views\Tutorial\Edit.cshtml.g.cs

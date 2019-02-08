@@ -1,6 +1,7 @@
 ﻿using AppEntity;
 using AppEntity.Models;
 using AppService;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Admin
 {
@@ -37,6 +39,14 @@ namespace Admin
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+                    {
+                        options.LoginPath = "/Login";
+                        options.AccessDeniedPath = "/Login";
+                        options.LogoutPath = "/Login";
+                        options.ExpireTimeSpan = TimeSpan.FromHours(10);
+                    });
 
             services.AddIdentity<AppUser, AppRole>(
                     options =>
