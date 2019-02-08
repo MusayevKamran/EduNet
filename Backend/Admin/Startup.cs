@@ -1,5 +1,6 @@
-﻿using EntityData;
-using EntityData.Models;
+﻿using AppEntity;
+using AppEntity.Models;
+using AppService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,6 +24,8 @@ namespace Admin
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.RegisterServices();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -35,19 +38,19 @@ namespace Admin
                     Configuration.GetConnectionString("DefaultConnection")));
 
 
-            //services.AddIdentity<AppUser, AppRole>(
-            //        options =>
-            //        {
-            //            options.Password.RequiredLength = 5;
-            //            options.Password.RequireLowercase = false;
-            //            options.Password.RequireUppercase = false;
-            //            options.Password.RequireNonAlphanumeric = false;
-            //            options.Password.RequireDigit = false;
-            //            options.Stores.MaxLengthForKeys = 128;
-            //        })
-            //        .AddEntityFrameworkStores<EntityContext>()
-            //        .AddDefaultUI()
-            //        .AddDefaultTokenProviders();
+            services.AddIdentity<AppUser, AppRole>(
+                    options =>
+                    {
+                        options.Password.RequiredLength = 5;
+                        options.Password.RequireLowercase = false;
+                        options.Password.RequireUppercase = false;
+                        options.Password.RequireNonAlphanumeric = false;
+                        options.Password.RequireDigit = false;
+                        options.Stores.MaxLengthForKeys = 128;
+                    })
+                    .AddEntityFrameworkStores<EntityContext>()
+                    .AddDefaultUI()
+                    .AddDefaultTokenProviders();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

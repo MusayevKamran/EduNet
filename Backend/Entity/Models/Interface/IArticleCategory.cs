@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace EntityData.Models.Interface
+namespace AppEntity.Models.Interface
 {
     public interface IArticleCategory :IGeneric<ArticleCategory>
     {

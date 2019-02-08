@@ -1,9 +1,9 @@
-﻿using EntityData.Models;
+﻿using AppEntity.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace EntityData
+namespace AppEntity
 {
     public class EntityContext : IdentityDbContext<AppUser, AppRole, Guid>
     {

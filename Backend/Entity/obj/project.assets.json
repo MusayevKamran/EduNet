@@ -4525,9 +4525,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\EduNet\\Backend\\Entity\\EntityData.csproj",
-      "projectName": "EntityData",
-      "projectPath": "D:\\Project\\EduNet\\Backend\\Entity\\EntityData.csproj",
+      "projectUniqueName": "D:\\Project\\EduNet\\Backend\\Entity\\AppEntity.csproj",
+      "projectName": "AppEntity",
+      "projectPath": "D:\\Project\\EduNet\\Backend\\Entity\\AppEntity.csproj",
       "packagesPath": "C:\\Users\\musayevk\\.nuget\\packages\\",
       "outputPath": "D:\\Project\\EduNet\\Backend\\Entity\\obj\\",
       "projectStyle": "PackageReference",

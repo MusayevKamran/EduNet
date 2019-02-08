@@ -16830,11 +16830,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\EduNet\\Backend\\Admin\\API\\API.csproj",
-      "projectName": "API",
-      "projectPath": "D:\\Project\\EduNet\\Backend\\Admin\\API\\API.csproj",
+      "projectUniqueName": "D:\\Project\\EduNet\\Backend\\API\\AppAPI.csproj",
+      "projectName": "AppAPI",
+      "projectPath": "D:\\Project\\EduNet\\Backend\\API\\AppAPI.csproj",
       "packagesPath": "C:\\Users\\musayevk\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\EduNet\\Backend\\Admin\\API\\obj\\",
+      "outputPath": "D:\\Project\\EduNet\\Backend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

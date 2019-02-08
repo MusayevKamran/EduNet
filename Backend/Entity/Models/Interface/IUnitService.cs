@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace EntityData.Models.Interface
+namespace AppEntity.Models.Interface
 {
     public interface IUnitService : IDisposable
     {

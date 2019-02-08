@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace EntityData.Models
+namespace AppEntity.Models
 {
     public class Category
     {

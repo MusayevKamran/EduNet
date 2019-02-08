@@ -1,4 +1,4 @@
-﻿namespace EntityData.Models
+﻿namespace AppEntity.Models.Enum
 {
     public enum PostCategory
     {

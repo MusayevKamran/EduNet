@@ -1,0 +1,12 @@
+D:\Project\EduNet\Backend\AppService\bin\Debug\netcoreapp3.0\AppService.deps.json
+D:\Project\EduNet\Backend\AppService\bin\Debug\netcoreapp3.0\AppService.dll
+D:\Project\EduNet\Backend\AppService\bin\Debug\netcoreapp3.0\AppService.pdb
+D:\Project\EduNet\Backend\AppService\bin\Debug\netcoreapp3.0\AppEntity.dll
+D:\Project\EduNet\Backend\AppService\bin\Debug\netcoreapp3.0\AppEntity.pdb
+D:\Project\EduNet\Backend\AppService\obj\Debug\netcoreapp3.0\AppService.csprojAssemblyReference.cache
+D:\Project\EduNet\Backend\AppService\obj\Debug\netcoreapp3.0\AppService.csproj.CoreCompileInputs.cache
+D:\Project\EduNet\Backend\AppService\obj\Debug\netcoreapp3.0\AppService.AssemblyInfoInputs.cache
+D:\Project\EduNet\Backend\AppService\obj\Debug\netcoreapp3.0\AppService.AssemblyInfo.cs
+D:\Project\EduNet\Backend\AppService\obj\Debug\netcoreapp3.0\AppService.csproj.CopyComplete
+D:\Project\EduNet\Backend\AppService\obj\Debug\netcoreapp3.0\AppService.dll
+D:\Project\EduNet\Backend\AppService\obj\Debug\netcoreapp3.0\AppService.pdb

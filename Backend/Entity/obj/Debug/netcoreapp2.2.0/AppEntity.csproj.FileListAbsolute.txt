@@ -1,0 +1,10 @@
+D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\AppEntity.deps.json
+D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\AppEntity.runtimeconfig.json
+D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\AppEntity.runtimeconfig.dev.json
+D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\AppEntity.dll
+D:\Project\EduNet\Backend\Entity\bin\Debug\netcoreapp2.2.0\AppEntity.pdb
+D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.csproj.CoreCompileInputs.cache
+D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.AssemblyInfoInputs.cache
+D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.AssemblyInfo.cs
+D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.dll
+D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.pdb

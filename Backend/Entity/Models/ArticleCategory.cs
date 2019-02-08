@@ -1,4 +1,4 @@
-﻿namespace EntityData.Models
+﻿namespace AppEntity.Models
 {
     public class ArticleCategory
     {
