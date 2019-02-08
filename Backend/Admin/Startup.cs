@@ -56,7 +56,10 @@ namespace Admin
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,
+            EntityContext context,
+            RoleManager<AppRole> roleManager,
+            UserManager<AppUser> userManager)
         {
             if (env.IsDevelopment())
             {
@@ -75,6 +78,8 @@ namespace Admin
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+
+            DBInitializer.InitializeAsync(app, context, userManager, roleManager).Wait();
 
             app.UseMvc(routes =>
             {

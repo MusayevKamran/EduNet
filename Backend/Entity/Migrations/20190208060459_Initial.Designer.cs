@@ -7,10 +7,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace EntityData.Migrations
+namespace AppEntity.Migrations
 {
     [DbContext(typeof(EntityContext))]
-    [Migration("20190207135010_Initial")]
+    [Migration("20190208060459_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace EntityData.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("EntityData.Models.AppRole", b =>
+            modelBuilder.Entity("AppEntity.Models.AppRole", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -49,7 +49,7 @@ namespace EntityData.Migrations
                     b.ToTable("AspNetRoles");
                 });
 
-            modelBuilder.Entity("EntityData.Models.AppUser", b =>
+            modelBuilder.Entity("AppEntity.Models.AppUser", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -122,7 +122,7 @@ namespace EntityData.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("EntityData.Models.Article", b =>
+            modelBuilder.Entity("AppEntity.Models.Article", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -157,7 +157,7 @@ namespace EntityData.Migrations
                     b.ToTable("Articles");
                 });
 
-            modelBuilder.Entity("EntityData.Models.ArticleCategory", b =>
+            modelBuilder.Entity("AppEntity.Models.ArticleCategory", b =>
                 {
                     b.Property<int>("ArticleId");
 
@@ -170,7 +170,7 @@ namespace EntityData.Migrations
                     b.ToTable("ArticleCategories");
                 });
 
-            modelBuilder.Entity("EntityData.Models.ArticleImages", b =>
+            modelBuilder.Entity("AppEntity.Models.ArticleImages", b =>
                 {
                     b.Property<int>("ArticleId");
 
@@ -184,7 +184,7 @@ namespace EntityData.Migrations
                     b.ToTable("ArticleImages");
                 });
 
-            modelBuilder.Entity("EntityData.Models.Category", b =>
+            modelBuilder.Entity("AppEntity.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -205,7 +205,7 @@ namespace EntityData.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("EntityData.Models.Comment", b =>
+            modelBuilder.Entity("AppEntity.Models.Comment", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -229,7 +229,7 @@ namespace EntityData.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("EntityData.Models.Image", b =>
+            modelBuilder.Entity("AppEntity.Models.Image", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -282,9 +282,11 @@ namespace EntityData.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
                 {
-                    b.Property<string>("LoginProvider");
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128);
 
-                    b.Property<string>("ProviderKey");
+                    b.Property<string>("ProviderKey")
+                        .HasMaxLength(128);
 
                     b.Property<string>("ProviderDisplayName");
 
@@ -314,9 +316,11 @@ namespace EntityData.Migrations
                 {
                     b.Property<Guid>("UserId");
 
-                    b.Property<string>("LoginProvider");
+                    b.Property<string>("LoginProvider")
+                        .HasMaxLength(128);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasMaxLength(128);
 
                     b.Property<string>("Value");
 
@@ -325,53 +329,53 @@ namespace EntityData.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("EntityData.Models.Article", b =>
+            modelBuilder.Entity("AppEntity.Models.Article", b =>
                 {
-                    b.HasOne("EntityData.Models.AppUser", "AppUser")
+                    b.HasOne("AppEntity.Models.AppUser", "AppUser")
                         .WithMany("Article")
                         .HasForeignKey("AppUserId");
                 });
 
-            modelBuilder.Entity("EntityData.Models.ArticleCategory", b =>
+            modelBuilder.Entity("AppEntity.Models.ArticleCategory", b =>
                 {
-                    b.HasOne("EntityData.Models.Article", "Article")
+                    b.HasOne("AppEntity.Models.Article", "Article")
                         .WithMany("ArticleCategory")
                         .HasForeignKey("ArticleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("EntityData.Models.Category", "Category")
+                    b.HasOne("AppEntity.Models.Category", "Category")
                         .WithMany("ArticleCategory")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("EntityData.Models.ArticleImages", b =>
+            modelBuilder.Entity("AppEntity.Models.ArticleImages", b =>
                 {
-                    b.HasOne("EntityData.Models.Article", "Article")
+                    b.HasOne("AppEntity.Models.Article", "Article")
                         .WithMany("Images")
                         .HasForeignKey("ArticleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("EntityData.Models.Image", "Image")
+                    b.HasOne("AppEntity.Models.Image", "Image")
                         .WithOne("ArticleImages")
-                        .HasForeignKey("EntityData.Models.ArticleImages", "ImageId")
+                        .HasForeignKey("AppEntity.Models.ArticleImages", "ImageId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("EntityData.Models.Comment", b =>
+            modelBuilder.Entity("AppEntity.Models.Comment", b =>
                 {
-                    b.HasOne("EntityData.Models.AppUser", "AppUser")
+                    b.HasOne("AppEntity.Models.AppUser", "AppUser")
                         .WithMany("Comment")
                         .HasForeignKey("AppUserId");
 
-                    b.HasOne("EntityData.Models.Article", "Article")
+                    b.HasOne("AppEntity.Models.Article", "Article")
                         .WithMany("Comment")
                         .HasForeignKey("ArticleId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
-                    b.HasOne("EntityData.Models.AppRole")
+                    b.HasOne("AppEntity.Models.AppRole")
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -379,7 +383,7 @@ namespace EntityData.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
                 {
-                    b.HasOne("EntityData.Models.AppUser")
+                    b.HasOne("AppEntity.Models.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -387,7 +391,7 @@ namespace EntityData.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
                 {
-                    b.HasOne("EntityData.Models.AppUser")
+                    b.HasOne("AppEntity.Models.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -395,12 +399,12 @@ namespace EntityData.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<System.Guid>", b =>
                 {
-                    b.HasOne("EntityData.Models.AppRole")
+                    b.HasOne("AppEntity.Models.AppRole")
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("EntityData.Models.AppUser")
+                    b.HasOne("AppEntity.Models.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -408,7 +412,7 @@ namespace EntityData.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
                 {
-                    b.HasOne("EntityData.Models.AppUser")
+                    b.HasOne("AppEntity.Models.AppUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

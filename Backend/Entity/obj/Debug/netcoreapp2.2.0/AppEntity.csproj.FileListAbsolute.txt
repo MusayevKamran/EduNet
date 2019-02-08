@@ -8,3 +8,4 @@ D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.AssemblyInf
 D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.AssemblyInfo.cs
 D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.dll
 D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.pdb
+D:\Project\EduNet\Backend\Entity\obj\Debug\netcoreapp2.2.0\AppEntity.csprojAssemblyReference.cache
