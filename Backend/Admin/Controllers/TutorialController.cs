@@ -31,21 +31,35 @@ namespace AppAdmin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            //var articles = await _unitService.Article.GetUserTutorialsAsync(Guid.Parse(userId));
-            var articles = await _unitService.Article.GetAllAsync();
+            var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var articles = await _unitService.Article.GetUserTutorialsAsync(Guid.Parse(userId));
 
+
+            Task<List<Category>> Category;
             var articleModel = articles
-                .Select(article => new ArticleDetailModel
-                {
+                //.Select(article => new ArticleDetailModel()
+                //{
+                //    Id = article.Id,
+                //    Category = Category,
+                //    Title = article.Title,
+                //    Row = article.Row,
+                //    PostCategory = article.PostCategory,
+                //    CreatedDate = article.CreatedDate,
+                //    UpdateDate = article.UpdateDate
+                //})
+                .SelectMany(article => new ArticleDetailModel() {
                     Id = article.Id,
-                    //Category = article.ArticleCategory,
+                    Category = _unitService.Category
+                    .GetById(article.ArticleCategory
+                            .Select(artCat => artCat.CategoryId).FirstOrDefault();        
+                    ),
                     Title = article.Title,
                     Row = article.Row,
                     PostCategory = article.PostCategory,
                     CreatedDate = article.CreatedDate,
                     UpdateDate = article.UpdateDate
-                }).ToList();
+                })
+                .ToList();
 
             var articleIndexModel = new ArticleIndexModel
             {
@@ -66,7 +80,7 @@ namespace AppAdmin.Controllers
             ArticleDetailModel articleDetailModel = new ArticleDetailModel
             {
                 Id = article.Id,
-                //Category = article.ArticleCategory,
+               // Category = new ArticleDetailModel().getCategoryList(),
                 Title = article.Title,
                 Row = article.Row,
                 PostCategory = article.PostCategory,
@@ -87,7 +101,7 @@ namespace AppAdmin.Controllers
         {
             ArticleDetailModel articleDetailModel = new ArticleDetailModel()
             {
-                // Category = _unitService.Category.GetAll()
+                //Category = _unitService.Category.GetAll()
             };
             return View(articleDetailModel);
         }

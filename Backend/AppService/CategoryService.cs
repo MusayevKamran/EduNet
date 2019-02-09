@@ -2,6 +2,7 @@
 using AppEntity.Models;
 using AppEntity.Models.Interface;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -22,10 +23,20 @@ namespace AppService
             return context.Categories.Any(e => e.Id == id);
         }
 
-        public async Task<ArticleCategory> GetCategoryByIdAsyncExtra(int? Id)
+        public async Task<List<Category>> GetCategoryListByAticleIdAsync(object obj)
         {
-            return await context.ArticleCategories
-                .FirstOrDefaultAsync(m => m.CategoryId == Id);
+            var categoryList = new List<Category>();
+
+            var articleCategory = await context.ArticleCategories
+                .Where(a => a.Category == obj)
+                .ToAsyncEnumerable().ToList();
+
+            foreach (var item in articleCategory)
+            {
+                var category = await context.Categories.FindAsync(item.CategoryId);
+                categoryList.Add(category);
+            }
+            return categoryList;
         }
     }
 }

@@ -26,15 +26,11 @@
     @{await Html.RenderPartialAsync("_header");}
     <div class="app-body">
         @{await Html.RenderPartialAsync("_sidebar");}
-
         <main class="main">
             @RenderBody()
         </main>
-
         @{await Html.RenderPartialAsync("_asideMenu");}
-
     </div>
-
     @{await Html.RenderPartialAsync("_footer");}
 
     <script src="lib/jquery/dist/jquery.min.js"></script>
