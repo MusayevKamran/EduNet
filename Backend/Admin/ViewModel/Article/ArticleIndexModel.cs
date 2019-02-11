@@ -1,5 +1,4 @@
-﻿using AppEntity.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 
 namespace AppAdmin.Models
