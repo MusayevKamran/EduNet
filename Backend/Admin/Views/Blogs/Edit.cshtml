@@ -1,0 +1,101 @@
+﻿@model AppAdmin.ViewModel.ArticleViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-4">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Article.Title" class="control-label"></label>
+                <input asp-for="Article.Title" class="form-control" />
+                <span asp-validation-for="Article.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <select name="CategoryId" class="form-control">
+                    <option value="0">@ViewBag.category</option>
+                    @foreach (var category in Model.Category)
+                    {
+                        <option value="@category.Id">@category.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Article.Row" class="control-label"></label>
+                <input asp-for="Article.Row" class="form-control" />
+                <span asp-validation-for="Article.Row" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="col-md-4 pull-right">
+
+            <div class="form-group pull-right">
+                <img src="~/@Model.Article.Image" id="previewImage" alt="Alternate Text" width="200" height="200" />
+                <input type="file" id="uploadImage" name="files" width="200" height="200" multiple />
+                <span asp-validation-for="Article.Image" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Article.Content" class="control-label"></label>
+        <textarea asp-for="Article.Content" id="editor"></textarea>
+        <span asp-validation-for="Article.Content" class="text-danger"></span>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group col-md-8">
+            <input type="submit" value="Save" class="btn btn-success" />
+        </div>
+        <div class="col-md-4 pull-right">
+            <dl class="dl-horizontal">
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Article.CreatedDate)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Article.CreatedDate)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Article.UpdateDate)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Article.UpdateDate)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section ScriptsRichTextEditor
+    {
+
+    <script type="text/javascript" src="~/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">CKEDITOR.replace('editor');</script>
+    <script type="text/javascript">CKEDITOR.config.skin = 'kama';</script>
+    <script type="text/javascript">CKEDITOR.config.language = 'az';</script>
+    <script type="text/javascript">CKEDITOR.config.height = '300';</script>
+
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#previewImage').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#uploadImage").change(function () {
+            readURL(this);
+        });
+    </script>
+}
