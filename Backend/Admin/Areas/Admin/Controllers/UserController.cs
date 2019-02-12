@@ -35,5 +35,23 @@ namespace AppAdmin.Areas.Admin.Controllers
 
             return View(await _context.AppUsers.Where(u => u.Id != Guid.Parse(claim.Value)).ToListAsync());
         }
-    }
+
+        public async Task<IActionResult> Lock( string Id)
+        {
+            if (Id==null)
+            {
+                return NotFound();
+            }
+            var applicationUser = await _context.AppUsers.FirstOrDefaultAsync(m => m.Id ==Id);
+
+            if (applicationUser == null)
+            {
+                return NotFound();
+            }
+            applicationUser.LockoutEnd = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
 }

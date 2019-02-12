@@ -21,14 +21,24 @@
             </tr>
             @foreach (var item in Model)
             {
-            <tr>
-                <td>
-                    @Html.DisplayNameFor(m => item.Email)
-                </td>
-                <td>
-                    <a class="btn btn-primary"  asp-action="Lock" asp-route-id="@item.Id"></a>
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(m => item.Email)
+                    </td>
+                    @if (item.LockoutEnd == null || item.LockoutEnd < DateTime.Now)
+                    {
+                        <td>
+                            <a class="btn btn-primary" asp-action="Lock" asp-route-id="@item.Id"></a>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <a class="btn btn-danger" asp-action="UnLock" asp-route-id="@item.Id"></a>
+                        </td>
+                    }
+
+                </tr>
             }
 
         </table>
