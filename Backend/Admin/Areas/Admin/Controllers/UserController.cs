@@ -28,7 +28,6 @@ namespace AppAdmin.Areas.Admin.Controllers
             _userManager = userManager;
         }
 
-        [Route("admin/user")]
         public async Task<IActionResult> Index()
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;

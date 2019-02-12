@@ -68,6 +68,8 @@ namespace AppAdmin.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            string role = Request.Form["rdUserRole"].ToString();
+
             returnUrl = returnUrl ?? Url.Content("~/");
             if (ModelState.IsValid)
             {
@@ -88,7 +90,23 @@ namespace AppAdmin.Areas.Identity.Pages.Account
                         await _roleManager.CreateAsync(new AppRole(UserStatus.USER));
                     }
 
-                    await _userManager.AddToRoleAsync(user, UserStatus.USER);
+                    if (role == UserStatus.TEACHER)
+                    {
+                        await _userManager.AddToRoleAsync(user, UserStatus.TEACHER);
+                    }
+                    else
+                    {
+                        if (role == UserStatus.ADMIN)
+                        {
+                            await _userManager.AddToRoleAsync(user, UserStatus.ADMIN);
+                        }
+                        else
+                        {
+                            await _userManager.AddToRoleAsync(user, UserStatus.USER);
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return LocalRedirect(returnUrl);
+                        }
+                    }
 
                     _logger.LogInformation("User created a new account with password.");
 
@@ -102,8 +120,8 @@ namespace AppAdmin.Areas.Identity.Pages.Account
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return LocalRedirect(returnUrl);
+
+                    RedirectToAction("Index", "User", new { area = "Admin" });
                 }
                 foreach (var error in result.Errors)
                 {
