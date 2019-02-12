@@ -31,6 +31,7 @@ namespace AppEntity.Models
         public int View { get; set; }
 
         public virtual ICollection<Article> Article { get; set; }
+
         public virtual ICollection<Comment> Comment { get; set; }
     }
 }

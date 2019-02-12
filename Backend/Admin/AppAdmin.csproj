@@ -29,6 +29,10 @@
 
 
   <ItemGroup>
+    <Folder Include="Areas\Teacher\Controllers\" />
+    <Folder Include="Areas\Teacher\Views\" />
+    <Folder Include="Areas\User\Controllers\" />
+    <Folder Include="Areas\User\Views\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
 

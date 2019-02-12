@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Migrations\20190208060459_Initial.Designer.cs">
-      <DependentUpon>20190208060459_Initial.cs</DependentUpon>
+    <Compile Update="Migrations\20190212102235_Initial.Designer.cs">
+      <DependentUpon>20190212102235_Initial.cs</DependentUpon>
     </Compile>
   </ItemGroup>
 

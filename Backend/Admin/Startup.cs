@@ -94,8 +94,8 @@ namespace Admin
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    name: "areas",
+                    template: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

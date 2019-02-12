@@ -4,7 +4,6 @@ D:\Project\EduNet\Backend\API\bin\Debug\netcoreapp2.2\AppAPI.runtimeconfig.json
 D:\Project\EduNet\Backend\API\bin\Debug\netcoreapp2.2\AppAPI.runtimeconfig.dev.json
 D:\Project\EduNet\Backend\API\bin\Debug\netcoreapp2.2\AppAPI.dll
 D:\Project\EduNet\Backend\API\bin\Debug\netcoreapp2.2\AppAPI.pdb
-D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.csprojAssemblyReference.cache
 D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.csproj.CoreCompileInputs.cache
 D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.RazorAssemblyInfo.cache
 D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.RazorAssemblyInfo.cs
