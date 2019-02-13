@@ -2,41 +2,51 @@
     <nav class="sidebar-nav">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">
+                <a class="nav-link" asp-area="User" asp-controller="Home" asp-action="Index">
                     <i class="nav-icon icon-speedometer"></i> EduNet
                     <span class="badge badge-primary">NEW</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">
-                    <i class="nav-icon icon-speedometer"></i> Admin
+                <a class="nav-link" asp-area="User" asp-controller="Home" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Home
                     <span class="badge badge-primary">NEW</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="User" asp-controller="Profile" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Profile
+                    <span class="badge badge-primary">NEW</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="User" asp-controller="Blog" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Blog
+                    <span class="badge badge-primary">NEW</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Teacher" asp-controller="Tutorial" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Tutorial
+                    <span class="badge badge-primary">NEW</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" asp-area="Teacher" asp-controller="Category" asp-action="Index">
+                    <i class="nav-icon icon-speedometer"></i> Category
+                    <span class="badge badge-primary">NEW</span>
+                </a>
+            </li>
+
+
             <li class="nav-item">
                 <a class="nav-link" asp-area="Admin" asp-controller="User" asp-action="Index">
                     <i class="nav-icon icon-speedometer"></i> User
                     <span class="badge badge-primary">NEW</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="Admin" asp-controller="Tutorials" asp-action="Index">
-                    <i class="nav-icon icon-speedometer"></i> Tutorial
-                    <span class="badge badge-primary">NEW</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="Admin" asp-controller="Blogs" asp-action="Index">
-                    <i class="nav-icon icon-speedometer"></i> Blog
-                    <span class="badge badge-primary">NEW</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-area="Admin" asp-controller="Categories" asp-action="Index">
-                    <i class="nav-icon icon-speedometer"></i> Category
-                    <span class="badge badge-primary">NEW</span>
-                </a>
-            </li>
+
         </ul>
     </nav>
     <button class="sidebar-minimizer brand-minimizer" type="button"></button>
