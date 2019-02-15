@@ -1,0 +1,14 @@
+D:\Project\EduNet\Backend\AppDAL\bin\Debug\netcoreapp2.2\AppDAL.deps.json
+D:\Project\EduNet\Backend\AppDAL\bin\Debug\netcoreapp2.2\AppDAL.dll
+D:\Project\EduNet\Backend\AppDAL\bin\Debug\netcoreapp2.2\AppDAL.pdb
+D:\Project\EduNet\Backend\AppDAL\bin\Debug\netcoreapp2.2\AppContract.dll
+D:\Project\EduNet\Backend\AppDAL\bin\Debug\netcoreapp2.2\AppEntity.dll
+D:\Project\EduNet\Backend\AppDAL\bin\Debug\netcoreapp2.2\AppContract.pdb
+D:\Project\EduNet\Backend\AppDAL\bin\Debug\netcoreapp2.2\AppEntity.pdb
+D:\Project\EduNet\Backend\AppDAL\obj\Debug\netcoreapp2.2\AppDAL.csprojAssemblyReference.cache
+D:\Project\EduNet\Backend\AppDAL\obj\Debug\netcoreapp2.2\AppDAL.csproj.CoreCompileInputs.cache
+D:\Project\EduNet\Backend\AppDAL\obj\Debug\netcoreapp2.2\AppDAL.AssemblyInfoInputs.cache
+D:\Project\EduNet\Backend\AppDAL\obj\Debug\netcoreapp2.2\AppDAL.AssemblyInfo.cs
+D:\Project\EduNet\Backend\AppDAL\obj\Debug\netcoreapp2.2\AppDAL.csproj.CopyComplete
+D:\Project\EduNet\Backend\AppDAL\obj\Debug\netcoreapp2.2\AppDAL.dll
+D:\Project\EduNet\Backend\AppDAL\obj\Debug\netcoreapp2.2\AppDAL.pdb

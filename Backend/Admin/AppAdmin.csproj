@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AppContract\AppContract.csproj" />
-    <ProjectReference Include="..\AppService\AppService.csproj" />
+    <ProjectReference Include="..\AppDAL\AppDAL.csproj" />
     <ProjectReference Include="..\Entity\AppEntity.csproj" />
   </ItemGroup>
 

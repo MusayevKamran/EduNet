@@ -4734,6 +4734,20 @@
           "bin/placeholder/AppContract.dll": {}
         }
       },
+      "AppDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "AppContract": "1.0.0",
+          "AppEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppDAL.dll": {}
+        }
+      },
       "AppEntity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -4749,20 +4763,6 @@
         },
         "runtime": {
           "bin/placeholder/AppEntity.dll": {}
-        }
-      },
-      "AppService/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "AppContract": "1.0.0",
-          "AppEntity": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/AppService.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AppService.dll": {}
         }
       }
     },
@@ -9531,6 +9531,20 @@
           "bin/placeholder/AppContract.dll": {}
         }
       },
+      "AppDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "AppContract": "1.0.0",
+          "AppEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppDAL.dll": {}
+        }
+      },
       "AppEntity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -9546,20 +9560,6 @@
         },
         "runtime": {
           "bin/placeholder/AppEntity.dll": {}
-        }
-      },
-      "AppService/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "AppContract": "1.0.0",
-          "AppEntity": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/AppService.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AppService.dll": {}
         }
       }
     }
@@ -18058,22 +18058,22 @@
       "path": "../AppContract/AppContract.csproj",
       "msbuildProject": "../AppContract/AppContract.csproj"
     },
+    "AppDAL/1.0.0": {
+      "type": "project",
+      "path": "../AppDAL/AppDAL.csproj",
+      "msbuildProject": "../AppDAL/AppDAL.csproj"
+    },
     "AppEntity/1.0.0": {
       "type": "project",
       "path": "../Entity/AppEntity.csproj",
       "msbuildProject": "../Entity/AppEntity.csproj"
-    },
-    "AppService/1.0.0": {
-      "type": "project",
-      "path": "../AppService/AppService.csproj",
-      "msbuildProject": "../AppService/AppService.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "AppContract >= 1.0.0",
+      "AppDAL >= 1.0.0",
       "AppEntity >= 1.0.0",
-      "AppService >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 2.2.0",
@@ -18119,8 +18119,8 @@
             "D:\\Project\\EduNet\\Backend\\AppContract\\AppContract.csproj": {
               "projectPath": "D:\\Project\\EduNet\\Backend\\AppContract\\AppContract.csproj"
             },
-            "D:\\Project\\EduNet\\Backend\\AppService\\AppService.csproj": {
-              "projectPath": "D:\\Project\\EduNet\\Backend\\AppService\\AppService.csproj"
+            "D:\\Project\\EduNet\\Backend\\AppDAL\\AppDAL.csproj": {
+              "projectPath": "D:\\Project\\EduNet\\Backend\\AppDAL\\AppDAL.csproj"
             },
             "D:\\Project\\EduNet\\Backend\\Entity\\AppEntity.csproj": {
               "projectPath": "D:\\Project\\EduNet\\Backend\\Entity\\AppEntity.csproj"

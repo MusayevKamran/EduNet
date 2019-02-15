@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppAdmin", "Admin\AppAdmin.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppAPI", "API\AppAPI.csproj", "{78318194-2C4F-474C-86AE-9788126A60C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppService", "AppService\AppService.csproj", "{13C2235F-DA02-408B-BA1E-6F05EE2B002F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppDAL", "AppDAL\AppDAL.csproj", "{13C2235F-DA02-408B-BA1E-6F05EE2B002F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppEntity", "Entity\AppEntity.csproj", "{65FC6A24-1FB6-4AFF-93DA-66FF885E0DC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppContract", "AppContract\AppContract.csproj", "{23354C84-6E92-4906-A5F7-6771AC5F7B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppContract", "AppContract\AppContract.csproj", "{23354C84-6E92-4906-A5F7-6771AC5F7B0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

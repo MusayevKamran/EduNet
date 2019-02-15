@@ -4525,11 +4525,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\EduNet\\Backend\\AppService\\AppService.csproj",
-      "projectName": "AppService",
-      "projectPath": "D:\\Project\\EduNet\\Backend\\AppService\\AppService.csproj",
+      "projectUniqueName": "D:\\Project\\EduNet\\Backend\\AppDAL\\AppDAL.csproj",
+      "projectName": "AppDAL",
+      "projectPath": "D:\\Project\\EduNet\\Backend\\AppDAL\\AppDAL.csproj",
       "packagesPath": "C:\\Users\\musayevk\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\EduNet\\Backend\\AppService\\obj\\",
+      "outputPath": "D:\\Project\\EduNet\\Backend\\AppDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

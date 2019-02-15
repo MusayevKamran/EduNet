@@ -12,4 +12,3 @@ D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.AssemblyInfo.cs
 D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.RazorTargetAssemblyInfo.cache
 D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.dll
 D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.pdb
-D:\Project\EduNet\Backend\API\obj\Debug\netcoreapp2.2\AppAPI.csprojAssemblyReference.cache
