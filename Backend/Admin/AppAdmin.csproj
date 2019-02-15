@@ -23,6 +23,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\AppContract\AppContract.csproj" />
     <ProjectReference Include="..\AppService\AppService.csproj" />
     <ProjectReference Include="..\Entity\AppEntity.csproj" />
   </ItemGroup>

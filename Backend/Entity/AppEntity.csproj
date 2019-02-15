@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Interface\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Migrations\20190212102235_Initial.Designer.cs">
       <DependentUpon>20190212102235_Initial.cs</DependentUpon>
     </Compile>

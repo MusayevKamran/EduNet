@@ -4721,6 +4721,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "AppContract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "AppEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppContract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppContract.dll": {}
+        }
+      },
       "AppEntity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -4742,6 +4755,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "AppContract": "1.0.0",
           "AppEntity": "1.0.0"
         },
         "compile": {
@@ -9504,6 +9518,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "AppContract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "AppEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppContract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppContract.dll": {}
+        }
+      },
       "AppEntity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -9525,6 +9552,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "AppContract": "1.0.0",
           "AppEntity": "1.0.0"
         },
         "compile": {
@@ -18025,6 +18053,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "AppContract/1.0.0": {
+      "type": "project",
+      "path": "../AppContract/AppContract.csproj",
+      "msbuildProject": "../AppContract/AppContract.csproj"
+    },
     "AppEntity/1.0.0": {
       "type": "project",
       "path": "../Entity/AppEntity.csproj",
@@ -18038,6 +18071,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "AppContract >= 1.0.0",
       "AppEntity >= 1.0.0",
       "AppService >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
@@ -18082,6 +18116,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "D:\\Project\\EduNet\\Backend\\AppContract\\AppContract.csproj": {
+              "projectPath": "D:\\Project\\EduNet\\Backend\\AppContract\\AppContract.csproj"
+            },
             "D:\\Project\\EduNet\\Backend\\AppService\\AppService.csproj": {
               "projectPath": "D:\\Project\\EduNet\\Backend\\AppService\\AppService.csproj"
             },

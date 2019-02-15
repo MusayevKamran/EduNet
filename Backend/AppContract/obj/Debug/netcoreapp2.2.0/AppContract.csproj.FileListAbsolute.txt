@@ -1,0 +1,12 @@
+D:\Project\EduNet\Backend\AppContract\bin\Debug\netcoreapp2.2.0\AppContract.deps.json
+D:\Project\EduNet\Backend\AppContract\bin\Debug\netcoreapp2.2.0\AppContract.dll
+D:\Project\EduNet\Backend\AppContract\bin\Debug\netcoreapp2.2.0\AppContract.pdb
+D:\Project\EduNet\Backend\AppContract\bin\Debug\netcoreapp2.2.0\AppEntity.dll
+D:\Project\EduNet\Backend\AppContract\bin\Debug\netcoreapp2.2.0\AppEntity.pdb
+D:\Project\EduNet\Backend\AppContract\obj\Debug\netcoreapp2.2.0\AppContract.csprojAssemblyReference.cache
+D:\Project\EduNet\Backend\AppContract\obj\Debug\netcoreapp2.2.0\AppContract.csproj.CoreCompileInputs.cache
+D:\Project\EduNet\Backend\AppContract\obj\Debug\netcoreapp2.2.0\AppContract.AssemblyInfoInputs.cache
+D:\Project\EduNet\Backend\AppContract\obj\Debug\netcoreapp2.2.0\AppContract.AssemblyInfo.cs
+D:\Project\EduNet\Backend\AppContract\obj\Debug\netcoreapp2.2.0\AppContract.csproj.CopyComplete
+D:\Project\EduNet\Backend\AppContract\obj\Debug\netcoreapp2.2.0\AppContract.dll
+D:\Project\EduNet\Backend\AppContract\obj\Debug\netcoreapp2.2.0\AppContract.pdb

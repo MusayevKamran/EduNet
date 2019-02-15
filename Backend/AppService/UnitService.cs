@@ -1,5 +1,5 @@
 ﻿using AppEntity;
-using AppEntity.Models.Interface;
+using AppContract;
 using AppService;
 using System;
 
@@ -12,45 +12,45 @@ namespace AppService
         {
             _context = context ?? throw new ArgumentException("db context can not be null");
         }
-        private IArticle _article;
-        public ICategory _category;
-        public IArticleCategory _articleCategory;
-        public IComment _comment;
-        public IUser _user;
+        private IArticleDAL _article;
+        public ICategoryDAL _category;
+        public IArticleCategoryDAL _articleCategory;
+        public ICommentDAL _comment;
+        public IUserDAL _user;
 
-        public IArticle Article
+        public IArticleDAL Article
         {
             get
             {
-                return _article ?? (_article = new ArticleService(_context));
+                return _article ?? (_article = new ArticleDAL(_context));
             }
         }
-        public ICategory Category
+        public ICategoryDAL Category
         {
             get
             {
-                return _category ?? (_category = new CategoryService(_context));
+                return _category ?? (_category = new CategoryDAL(_context));
             }
         }
-        public IArticleCategory ArticleCategory
+        public IArticleCategoryDAL ArticleCategory
         {
             get
             {
-                return _articleCategory ?? (_articleCategory = new ArticleCategoryService(_context));
+                return _articleCategory ?? (_articleCategory = new ArticleCategoryDAL(_context));
             }
         }
-        public IComment Comment
+        public ICommentDAL Comment
         {
             get
             {
-                return _comment ?? (_comment = new CommentService(_context));
+                return _comment ?? (_comment = new CommentDAL(_context));
             }
         }
-        public IUser User
+        public IUserDAL User
         {
             get
             {
-                return _user ?? (_user = new UserService(_context));
+                return _user ?? (_user = new UserDAL(_context));
             }
         }
 
