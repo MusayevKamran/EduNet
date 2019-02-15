@@ -1,7 +1,6 @@
-﻿using AppAdmin.Helpers;
+﻿using AppContract;
 using AppEntity;
 using AppEntity.Models;
-using AppEntity.Models.Interface;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

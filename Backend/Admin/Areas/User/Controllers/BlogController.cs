@@ -1,10 +1,9 @@
 ﻿using AppAdmin.Helpers;
 using AppAdmin.ViewModel;
+using AppContract;
 using AppEntity;
 using AppEntity.Models;
 using AppEntity.Models.Enum;
-using AppEntity.Models.Interface;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

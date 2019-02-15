@@ -7,10 +7,10 @@ namespace AppService
     {
         public static IServiceCollection RegisterServices(this IServiceCollection services)
         {
+            services.AddScoped<IUnitService, UnitService>();
             services.AddScoped<IArticleDAL, ArticleDAL>();
             services.AddScoped<ICategoryDAL, CategoryDAL>();
-            services.AddScoped<IArticleCategoryDAL, ArticleCategoryDAL>();
-            services.AddScoped<IUnitService, UnitService>();
+            services.AddScoped<IArticleCategoryDAL, ArticleCategoryDAL>();    
             services.AddScoped<IUserDAL, UserDAL>();
 
             return services;

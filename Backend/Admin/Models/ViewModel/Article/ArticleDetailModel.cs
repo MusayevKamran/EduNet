@@ -1,7 +1,7 @@
-﻿using AppEntity;
+﻿using AppContract;
+using AppEntity;
 using AppEntity.Models;
 using AppEntity.Models.Enum;
-using AppEntity.Models.Interface;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
